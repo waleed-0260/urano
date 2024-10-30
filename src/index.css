@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html{
+    overflow-x: hidden;
+}
+/* *{
+    overflow-x: hidden;
+} */
+.heading{
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .heading{
+        font-size: 30px;
+    }
+}
+
+.textColor{
+    color: #ADADAD;
+    /* font-family: "helveticaNeueMedium", "sans-serif"; */
+}
+
+.btnColor{
+    background: linear-gradient(90deg, #2DBDC5 0%, #2DBDC5 0%, #16EAC0 100%);
+    color: black;
+}
+
+@font-face {
+    font-family: 'Conthrax';
+    src: url('/assets/fonts/conthrax-sb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'HelveticaNeueMedium';
+    src: url('/fonts/HelveticaNeueMedium.woff2') format('woff2'),
+         url('/fonts/HelveticaNeueMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .custom-initial-bg {
+    background-color: #080707;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .custom-hover-bg {
+    background: linear-gradient(to bottom, rgba(8, 7, 7, 0.8), rgba(8, 7, 7, 0.7) 30%, rgba(0, 104, 94, 0.6));
+  }

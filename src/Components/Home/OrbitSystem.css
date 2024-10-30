@@ -1,0 +1,83 @@
+.orbit-container {
+    position: relative;
+    width: 790px;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.earth {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: #16eac0; 
+    background-image: url("/assets/planets/2k_uranus.jpg");
+    border-radius: 50%;
+    box-shadow: 0 0 16px rgb(0, 0, 0);
+    pointer-events: none;
+    left: 56%;
+    transform: translateX(-50%);
+}
+
+.earth::before, .earth::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.earth::before {
+    width: 60px;
+    height: 60px;
+    background: rgba(22, 234, 192, 0.2); 
+    filter: blur(30px); 
+    top: -15px;
+    left: -15px;
+
+}
+
+.earth::after {
+    width: 100px;
+    height: 100px;
+    background: rgba(22, 234, 192, 0.2);
+    filter: blur(40px);
+    top: -25px;
+    left: -25px;
+
+}
+
+.earth .dot {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.earth .dot1 { top: 9%; left: 10%; }
+.earth .dot2 { top: 19%; left: 20%; }
+.earth .dot3 { top: 8%; left: 39%; }
+.earth .dot4 { top: 22%; left: 59%; }
+.earth .dot5 { top: 45%; left: 20%; }
+.earth .dot6 { top: 55%; left: 40%; }
+.earth .dot7 { top: 70%; left: 65%; }
+.earth .dot8 { top: 90%; left: 35%; }
+.earth .dot9 { top: 40%; left: 75%; }
+.earth .dot10 { top: 25%; left: 90%; }
+
+/* Orbits */
+.orbit {
+    transition: transform 0.4s linear;
+    transform-origin: center;
+}
+
+.planet {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .orbit-container {
+        /* transform: scale(0.8); */
+    }
+    
+}
