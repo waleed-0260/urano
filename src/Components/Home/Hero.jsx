@@ -27,6 +27,10 @@ const Hero = () => {
   return (
     <div className='flex items-center justify-center w-full z-0' data-aos="fade-up" data-aos-delay="500">
 
+
+
+
+
       <div className='flex lg:flex-row flex-col items-center justify-around w-[90%] lg:max-w-[1200px] text-white lg:mt-0 mt-[100px]'>
         <div className='flex flex-col lg:w-[30%]'>
           <h1 className='heading lg:w-[350px] font-conthrax tracking-wide leading-8' data-aos="fade-up" data-aos-delay="500">Unlocking the power of <span className='text-[#2DBDC5]'>on-chain</span> tokenization</h1>

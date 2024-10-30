@@ -65,7 +65,6 @@ const Team = () => {
                                     <img src={data.img} alt={`${data.name}'s profile`} className='w-full h-full object-cover' />
 
                                 </div>
-
                                 <div className='absolute top-0 right-0 w-[27px] h-[27px] bg-black rounded-full flex items-center justify-center z-50 border border-[#27292b]'>
                                     <FaLinkedinIn className='text-white' />
                                 </div>
