@@ -72,8 +72,11 @@
 
 /* Orbits */
 .orbit {
+    -webkit-transition: -webkit-transform 0.4s linear;
+    transition: -webkit-transform 0.4s linear;
+    -o-transition: transform 0.4s linear;
     transition: transform 0.4s linear;
-    transform-origin: center;
+    transition: transform 0.4s linear, -webkit-transform 0.4s linear;
 }
 
 .planet {
