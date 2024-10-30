@@ -16,35 +16,36 @@ const OrbitSystem = ({
     const config = {
         "planet1": {
             rotation: {
-                planet1: isMobile ? "0deg" : "270deg",
-                planet2: "120deg",
-                planet3: "20deg",
-                planet4: "-170deg",
+                // planet1: "",
+                planet1: isMobile ? "0" : "270",
+                planet2: "120",
+                planet3: "20",
+                planet4: "-170",
             }
         },
         "planet2": {
             rotation: {
-                planet1: "120deg",
-                planet2: isMobile ? "0deg" : "-90deg",
-                planet3: "-170deg",
-                planet4: "20deg",
+                planet1: "120",
+                planet2: isMobile ? "0" : "-90",
+                planet3: "-170",
+                planet4: "20",
             }
         },
         "planet3": {
             rotation: {
-                planet1: "200deg",
-                planet2: "30deg",
-                planet3: isMobile ? "0deg" : "-90deg",
-                planet4: "-230deg",
+                planet1: "200",
+                planet2: "30",
+                planet3: isMobile ? "0" : "-90",
+                planet4: "-230",
             }
         },
         "planet4": {
             rotation: {
-                planet1: "40deg",
-                planet2: "-130deg",
-                // planet2: "230deg",
-                planet3: "140deg",
-                planet4: isMobile ? "0deg" : "-90deg",
+                planet1: "40",
+                planet2: "-130",
+                // planet2: "230",
+                planet3: "140",
+                planet4: isMobile ? "0" : "-90",
             }
         },
     }
@@ -123,8 +124,8 @@ const OrbitSystem = ({
                 <g
                     className="orbit"
                     onClick={() => handlePlanetClick('planet1')}
+                    transform={`rotate(${config[activePlanet]?.rotation?.planet1}, 400, 400)`}
                     style={{
-                        transform: `rotate(${config[activePlanet]?.rotation?.planet1})`,
                         transitionDuration: '0.6s'
                     }}
                 >
@@ -142,8 +143,8 @@ const OrbitSystem = ({
                 <g
                     className="orbit"
                     onClick={() => handlePlanetClick('planet2')}
+                    transform={`rotate(${config[activePlanet]?.rotation?.planet2}, 400, 400)`}
                     style={{
-                        transform: `rotate(${config[activePlanet]?.rotation?.planet2})`,
                         transitionDuration: '0.5s'
                     }}
                 >
@@ -155,8 +156,8 @@ const OrbitSystem = ({
                 <g
                     className="orbit"
                     onClick={() => handlePlanetClick('planet3')}
+                    transform={`rotate(${config[activePlanet]?.rotation?.planet3}, 400, 400)`}
                     style={{
-                        transform: `rotate(${config[activePlanet]?.rotation?.planet3})`,
                         transitionDuration: '0.4s'
                     }}
                 >
@@ -168,9 +169,9 @@ const OrbitSystem = ({
                 <g
                     className="orbit"
                     onClick={() => handlePlanetClick('planet4')}
+                    transform={`rotate(${config[activePlanet]?.rotation?.planet4}, 400, 400)`}
                     style={{
-                        transform: `rotate(${config[activePlanet]?.rotation?.planet4})`,
-                        // transitionDuration: '0.5s'
+                        transitionDuration: '0.4s'
                     }}
                 >
                     <circle cx="400" cy="400" r="50" fill="none" stroke="url(#gradient4)" strokeWidth="1" />
