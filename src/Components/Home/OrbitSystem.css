@@ -8,26 +8,31 @@
     overflow: visible;
 }
 
-.earth {
+.uranus {
     position: absolute;
-    width: 23px;
-    height: 23px;
-    background-color: #16eac0; 
-    background-image: url("/assets/planets/2k_uranus.jpg");
+    width: 80px;
+    height: 80px;
+    /* width: 23px;
+    height: 23px; */
+    /* background-color: #16eac0;  */
+    background-image: url("/assets/planets/uranus.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     border-radius: 50%;
-    box-shadow: 0 0 16px rgb(0, 0, 0);
+    /* box-shadow: 0 0 16px rgb(0, 0, 0); */
     pointer-events: none;
     left: 56%;
     transform: translateX(-50%);
 }
 
-.earth::before, .earth::after {
+/* .uranus::before, .uranus::after {
     content: '';
     position: absolute;
     border-radius: 50%;
 }
 
-.earth::before {
+.uranus::before {
     width: 60px;
     height: 60px;
     background: rgba(22, 234, 192, 0.2); 
@@ -35,9 +40,9 @@
     top: -15px;
     left: -15px;
 
-}
+} */
 
-.earth::after {
+/* .uranus::after {
     width: 100px;
     height: 100px;
     background: rgba(22, 234, 192, 0.2);
@@ -45,25 +50,25 @@
     top: -25px;
     left: -25px;
 
-}
+} */
 
-.earth .dot {
+.uranus .dot {
     position: absolute;
     width: 2px;
     height: 2px;
     background-color: rgba(0, 0, 0, 0.4); 
 }
 
-.earth .dot1 { top: 9%; left: 10%; }
-.earth .dot2 { top: 19%; left: 20%; }
-.earth .dot3 { top: 8%; left: 39%; }
-.earth .dot4 { top: 22%; left: 59%; }
-.earth .dot5 { top: 45%; left: 20%; }
-.earth .dot6 { top: 55%; left: 40%; }
-.earth .dot7 { top: 70%; left: 65%; }
-.earth .dot8 { top: 90%; left: 35%; }
-.earth .dot9 { top: 40%; left: 75%; }
-.earth .dot10 { top: 25%; left: 90%; }
+/* .uranus .dot1 { top: 9%; left: 10%; }
+.uranus .dot2 { top: 19%; left: 20%; }
+.uranus .dot3 { top: 8%; left: 39%; }
+.uranus .dot4 { top: 22%; left: 59%; }
+.uranus .dot5 { top: 45%; left: 20%; }
+.uranus .dot6 { top: 55%; left: 40%; }
+.uranus .dot7 { top: 70%; left: 65%; }
+.uranus .dot8 { top: 90%; left: 35%; }
+.uranus .dot9 { top: 40%; left: 75%; }
+.uranus .dot10 { top: 25%; left: 90%; } */
 
 /* Orbits */
 .orbit {
@@ -78,6 +83,10 @@
 @media screen and (max-width: 800px) {
     .orbit-container {
         /* transform: scale(0.8); */
+    }
+    .uranus {
+        width: 41px;
+        height: 41px;
     }
     
 }
