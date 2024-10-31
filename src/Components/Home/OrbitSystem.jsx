@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './OrbitSystem.css';
 import useScreensize from '../../hook/useScreensize';
+import './OrbitSystem.css';
 
 const OrbitSystem = ({
     activePlanet,

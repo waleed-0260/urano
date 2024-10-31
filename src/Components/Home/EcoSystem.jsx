@@ -1,11 +1,12 @@
-import { useState } from 'react';
 import stars from '../../assets/stars.png';
 import { MdKeyboardArrowRight } from "react-icons/md";
-import OrbitSystem from './OrbitSystem';
 import { Link } from 'react-router-dom';
-const EcoSystem = () => {
-  const [activePlanet, setActivePlanet] = useState("planet1");
+import OrbitSystem from './OrbitSystem';
 
+const EcoSystem = ({
+  activePlanet,
+  setActivePlanet
+}) => {
 
   const content = {
     "planet1": {
@@ -59,23 +60,21 @@ const EcoSystem = () => {
             ></div>
           </div>
         </div>
-        <div className="relative overflow-hidden flex justify-center items-center lg:mt-0 lg:max-h-[600px] max-h-[800px] lg:pt-0 pt-8 overflow-y-hidden">
+        <div data-aos="fade-up" data-aos-delay={200} className="relative select-none flex-grow overflow-hidden flex justify-center items-center lg:mt-0 lg:max-h-[600px] max-h-[800px] overflow-y-hidden">
           <video
-            className="absolute opacity-30 top-0 left-0 w-full h-full object-cover"
+            className="absolute select-none pointer-events-none opacity-30 top-0 left-0 w-full h-full object-cover"
             src="assets/stars.webm"
             autoPlay
             loop
             muted
             poster={stars}
             playsInline
+            controls={false}
           ></video>
-          <OrbitSystem
-            activePlanet={activePlanet}
-            setActivePlanet={setActivePlanet}
-          />
+          <OrbitSystem activePlanet={activePlanet} setActivePlanet={setActivePlanet} />
         </div>
         <div
-        className="lg:hidden block max-w-[320px] w-full z-[22] pointer-events-none -translate-y-[50px] mx-auto h-[6px] bg-[#212121] rounded-full relative overflow-hidden">
+          className="lg:hidden block max-w-[320px] w-full z-[22] pointer-events-none -translate-y-[50px] mx-auto h-[6px] bg-[#212121] rounded-full relative overflow-hidden">
           <div className="h-full bg-[#16EAC0] shadow-lg relative overflow-hidden transition-[width] ease-in-out duration-200 rounded-full"
             style={{
               width: content[activePlanet]?.progress + "%"
