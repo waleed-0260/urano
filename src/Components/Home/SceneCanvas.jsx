@@ -77,9 +77,15 @@ const SceneCanvas = ({
         .to(headingRef.current, 
             { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" } // Ending state
         );
-        gsap.fromTo(textRef.current, 
+        const dl = gsap.timeline();
+        
+        dl.fromTo(
+            textRef.current, 
             { opacity: 0, y: 160 }, // Starting state
-            { opacity: 1, y: 0, duration: 1 } // Ending state
+            { opacity: 0.5, y: 80, duration: 0.5, ease: "power2.out" } // Middle state
+        )
+        .to(textRef.current, 
+            { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" } // Ending state
         );
     }, []);
 
