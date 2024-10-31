@@ -33,7 +33,7 @@ const Partners = () => {
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-right"
         >
           <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-            <img src={partner12} alt="HRC" />
+            <img src={partner12} alt="HRC" className="object-cover"/>
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">HRC</p>
@@ -49,7 +49,7 @@ const Partners = () => {
           data-aos="fade-up"
         >
           <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-            <img src={partner11} alt="Thompson & Stein" />
+            <img src={partner11} alt="Thompson & Stein" className="object-cover"/>
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">
@@ -66,7 +66,7 @@ const Partners = () => {
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-right"
         >
           <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-            <img src={partner2} alt="Notarify" className="w-[52px] h-[52px]" />
+            <img src={partner2} alt="Notarify" className="object-cover" />
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">Notarify</p>
@@ -85,18 +85,18 @@ const Partners = () => {
             <img
               src={partner1}
               alt="Nova Lab"
-              className="w-[49.61px] h-[33.32px] object-fit"
+              className="object-cover"
             />
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">Nova Lab</p>
-            <p className="text-sm textColor">Social media manager</p>
+            <p className="text-sm textColor">Social Media Manager</p>
           </div>
         </a>
 
         <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-right">
           <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-            <img src={partner10} alt="LogiX Transport" />
+            <img src={partner10} alt="LogiX Transport" className="object-cover"/>
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">
@@ -113,13 +113,13 @@ const Partners = () => {
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
           data-aos="fade-left"
         >
-          <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-            <img src={partner9} alt="Magnitudo" className="w-[52px] h-[41px]" />
+          <div className="h-[65px] w-[75px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+            <img src={partner9} alt="Magnitudo" className="object-cover" />
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">Magnitudo</p>
             <p className="text-sm textColor">
-              Film production & distribution Advisors
+              Film production & distribution advisors
             </p>
           </div>
         </a>
@@ -141,7 +141,7 @@ const Partners = () => {
             <p className="font-bold text-base font-conthrax">
               Bono Ingegneria S.r.l.
             </p>
-            <p className="text-sm textColor">Real estate advisors</p>
+            <p className="text-sm textColor">Real Estate advisors</p>
           </div>
         </a>
 
@@ -156,7 +156,7 @@ const Partners = () => {
             <img
               src={partner4}
               alt="Stay Record"
-              className="h-full object-cover mt-4"
+              className="h-full w-full object-cover"
             />
           </div>
           <div className="flex flex-col">
@@ -171,7 +171,7 @@ const Partners = () => {
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">Iwona Matwiejew</p>
-            <p className="text-sm textColor">Commidities advisor</p>
+            <p className="text-sm textColor">Commodities advisor</p>
           </div>
         </div>
 
@@ -185,7 +185,7 @@ const Partners = () => {
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">Gjon Radovani</p>
-            <p className="text-sm textColor">Art-real Estate advisors</p>
+            <p className="text-sm textColor">Real Estate advisors</p>
           </div>
         </div>
 
@@ -199,7 +199,7 @@ const Partners = () => {
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">Luigi Fazaari</p>
-            <p className="text-sm textColor">Real estate advisor</p>
+            <p className="text-sm textColor">Real Estate advisor</p>
           </div>
         </div>
 
