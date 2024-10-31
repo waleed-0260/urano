@@ -27,11 +27,11 @@ const Roadmap = () => {
         <div className="relative w-full">
 
         <Swiper data-aos="fade-up" data-aos-delay="400"
-           modules={[Autoplay, Navigation]}
-         autoplay={{
-          delay: 1000, // Adjust delay as needed (in milliseconds)
-          disableOnInteraction: false, // Autoplay will not stop on user interaction
-        }}
+           modules={[Navigation]}
+        //  autoplay={{
+        //   delay: 1000, // Adjust delay as needed (in milliseconds)
+        //   disableOnInteraction: false, // Autoplay will not stop on user interaction
+        // }}
         navigation={{
           prevEl: '.swiper-button-prev',
           nextEl: '.swiper-button-next',
@@ -58,7 +58,7 @@ const Roadmap = () => {
             // spaceBetween: 30
           }
         }}
-        loop={true}
+        // loop={true}
         onSlideChange={handleSlideChange} // Attach slide change event
         
         >
@@ -197,8 +197,8 @@ const Roadmap = () => {
             {/* <div className="swiper-button-prev bg-red-700 absolute left-[-10px] z-50"></div>
             <div className="swiper-button-next"></div> */}
             </Swiper>
-            <div className="swiper-button-prev absolute text-white top-[150px] transform -translate-y-1/2 z-50" onClick={() => swiperRef.current.swiper.slidePrev()}></div>
-            <div className="swiper-button-next absolute text-white top-[150px] transform -translate-y-1/2 z-50" onClick={() => swiperRef.current.swiper.slideNext()}></div>
+            <div className="swiper-button-prev absolute text-white sm:top-[150px] top-[210px] md:left-0 left-[-10px] transform -translate-y-1/2 z-50" onClick={() => swiperRef.current.swiper.slidePrev()}></div>
+            <div className="swiper-button-next absolute text-white sm:top-[150px] top-[210px] transform -translate-y-1/2 z-50" onClick={() => swiperRef.current.swiper.slideNext()}></div>
             </div>
 
 
