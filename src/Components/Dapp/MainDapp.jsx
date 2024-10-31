@@ -21,7 +21,7 @@ const MainDapp = ({ text, img, heading, addText }) => {
               {heading ? heading : ""}</p>
             <p className={`textColor md:w-[80%] w-[90%] text-center md:text-left mt-4`}>{text}</p>
             <p className='w-[80%] textColor text-sm mt-4 md:text-left text-center'>{addText}</p>
-            <Link to="/" className='flex flex-row items-center gap-2'>
+            <Link to="/coming" className='flex flex-row items-center gap-2'>
 
               <p className="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-[#2DBDC5] to-[#16EAC0] flex items-center font-semibold">
                 Coming Soon

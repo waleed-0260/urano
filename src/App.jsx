@@ -15,6 +15,7 @@ import AOS from "aos"
 import './App.css'
 import 'aos/dist/aos.css';
 import ScrollToTop from './pages/ScrollToTop'
+import ComingSoon from './Components/ComingSoon'
 
 export default function App() {
   useEffect(() => {
@@ -36,6 +37,7 @@ export default function App() {
             <Route path='/unft' element={<Unft />} />
             <Route path='/launchpad' element={<Launchpad />} />
             <Route path='/token' element={<Token />} />
+            <Route path='/coming' element={<ComingSoon/>}/>
             <Route path='*' element={<Navigate to="/" />} />
           </Routes>
         </div>
