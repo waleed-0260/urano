@@ -85,7 +85,8 @@ const Explore = () => {
           <div className=" text-center  flex items-center justify-center flex-col">
             <h2 className="text-xl font-bold mb-2 font-conthrax">Launchpad</h2>
             <p className="textColor mb-4 w-[74%]">
-            Tokenize your real world Asset with Urano and access a universe of new investors.            </p>
+            Tokenize your Real World Assets (RWA) with Urano and access a universe of new investors.
+          </p>
             <Link to="/launchpad" className="text-[#2DBDC5] flex flex-row gap-2 items-center justify-center font-semibold hover:underline mt-6 z-50">
               Explore
             <MdKeyboardArrowRight/>  
