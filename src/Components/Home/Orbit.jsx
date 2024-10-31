@@ -13,12 +13,12 @@ const Orbit = () => {
         <br />
         RWA Tokenization
       </p>
-      <div className='flex sm:flex-row flex-col gap-4 mt-4'>
-        <Link to="#ecosystem" className='sm:w-[130px] w-[50vw] cursor-pointer btnColor rounded-lg py-2 font-semibold flex items-center justify-center gap-1 text-center' data-aos="fade-right">
+      <div className='flex sm:flex-row flex-col gap-4 mt-4' data-aos="fade-up">
+        <Link to="#ecosystem" className='sm:w-[130px] w-[50vw] cursor-pointer btnColor rounded-lg py-2 font-semibold flex items-center justify-center gap-1 text-center' >
           Discover
           <MdKeyboardArrowRight className='mt-[0.3px]' />
         </Link>
-        <button className='sm:w-[130px] w-[50vw] cursor-pointer  rounded-lg py-2 bg-transparent border-[2px] border-[#2DBDC5] text-white flex items-center justify-center gap-1 text-center' data-aos="fade-left">
+        <button className='sm:w-[130px] w-[50vw] cursor-pointer  rounded-lg py-2 bg-transparent border-[2px] border-[#2DBDC5] text-white flex items-center justify-center gap-1 text-center' >
           Learn More
           <MdKeyboardArrowRight className='mt-[0.3px]' />
         </button>

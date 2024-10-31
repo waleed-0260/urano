@@ -34,7 +34,7 @@ const EcoSystem = () => {
     <section className="relative overflow-hidden max-w-full w-full mx-auto lg:text-left text-center">
       <div className="absolute top-1/2 left-[-200px] -translate-y-1/2 w-[380px] lg:min-h-[500px] bg-gradient-to-b from-[#37d5de24] to-[#2DBDC5] opacity-20 blur-3xl rounded-full"></div>
       <div className="lg:max-w-[1200px] sm:w-[90%] flex lg:flex-row flex-col sm:items-center items-left justify-around text-white my-9 mx-auto">
-        <div className="flex flex-col lg:w-[30%] relative ml-4 sm:ml-0" data-aos="fade-left">
+        <div className="flex flex-col lg:w-[30%] relative ml-4 sm:ml-0" data-aos="fade-up">
           <h1
             data-aos="fade-up"
             className="heading lg:w-[360px] font-conthrax">

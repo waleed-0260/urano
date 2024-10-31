@@ -10,8 +10,8 @@ const Explore = () => {
   return (
     <div id="ecosystem" className="lg:max-w-[1200px] w-[90%] flex flex-col items-center justify-center my-4 bg-black text-white relative" >
       <p className="heading font-bold font-conthrax text-center" data-aos="fade-up">Explore the Urano <br /> Ecosystem</p>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4  mt-[150px]">
-        <div className="lg:w-[100%] sm:w-[40vw] w-[70vw] lg:mt-0 sm:mt-[50px] mt-[100px] h-[450px] bg-[#080707] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.6)] border-[1px] border-[#27292b] relative shadow-lg rounded-[15px] p-4 flex items-center justify-start flex-col" data-aos="fade-right">
+      <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4  mt-[150px]" data-aos="fade-up" data-aos-delay="300">
+        <div className="lg:w-[100%] sm:w-[40vw] w-[70vw] lg:mt-0 sm:mt-[50px] mt-[100px] h-[450px] bg-[#080707] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.6)] border-[1px] border-[#27292b] relative shadow-lg rounded-[15px] p-4 flex items-center justify-start flex-col">
           {/* Image container */}
           {/* <div className="w-[280px] h-[260px] mt-[-130px]"> */}
           <div className='absolute top-[10px] left-[15%] w-[200px] h-[180px] bg-gradient-to-b from-[#ffffff] to-[#2DBDC5] opacity-20 blur-lg rounded-full'></div>
@@ -33,7 +33,7 @@ const Explore = () => {
           </div>
         </div>
 
-        <div className="lg:w-[100%] sm:w-[40vw] w-[70vw] lg:mt-0 sm:mt-[50px] mt-[100px] h-[450px] bg-[#080707] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.6)] border-[1px] border-[#27292b] relative shadow-lg rounded-[15px] p-4 flex items-center justify-start flex-col transition-all duration-500 ease-in-out" data-aos="fade-right">
+        <div className="lg:w-[100%] sm:w-[40vw] w-[70vw] lg:mt-0 sm:mt-[50px] mt-[100px] h-[450px] bg-[#080707] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.6)] border-[1px] border-[#27292b] relative shadow-lg rounded-[15px] p-4 flex items-center justify-start flex-col transition-all duration-500 ease-in-out">
           {/* Image container */}
           {/* <div className="w-[200px] h-[260px] mt-[-130px]"> */}
           <div className='absolute top-[10px] left-[15%] w-[200px] h-[180px] bg-gradient-to-b from-[#ffffff] to-[#2DBDC5] opacity-20 blur-lg rounded-full'></div>
@@ -53,7 +53,7 @@ const Explore = () => {
           </div>
         </div>
 
-        <div className="lg:w-[100%] sm:w-[40vw] w-[70vw] lg:mt-0 sm:mt-[50px] mt-[100px] h-[450px] bg-[#080707] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.6)] border-[1px] border-[#27292b] relative shadow-lg rounded-[15px] p-4 flex items-center justify-start flex-col" data-aos="fade-left">
+        <div className="lg:w-[100%] sm:w-[40vw] w-[70vw] lg:mt-0 sm:mt-[50px] mt-[100px] h-[450px] bg-[#080707] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.6)] border-[1px] border-[#27292b] relative shadow-lg rounded-[15px] p-4 flex items-center justify-start flex-col">
           {/* Image container */}
           {/* <div className="w-[200px] h-[260px] mt-[-130px]"> */}
           <div className='absolute top-[10px] left-[15%] w-[200px] h-[180px] bg-gradient-to-b from-[#ffffff] to-[#2DBDC5] opacity-20 blur-lg rounded-full'></div>
@@ -73,7 +73,7 @@ const Explore = () => {
           </div>
         </div>
 
-        <div className="lg:w-[100%] sm:w-[40vw] w-[70vw] lg:mt-0 sm:mt-[50px] mt-[100px] h-[450px] bg-[#080707] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.6)] border-[1px] border-[#27292b] relative shadow-lg rounded-[15px] p-4 flex items-center justify-start flex-col" data-aos="fade-left">
+        <div className="lg:w-[100%] sm:w-[40vw] w-[70vw] lg:mt-0 sm:mt-[50px] mt-[100px] h-[450px] bg-[#080707] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.6)] border-[1px] border-[#27292b] relative shadow-lg rounded-[15px] p-4 flex items-center justify-start flex-col">
           {/* Image container */}
           {/* <div className="w-[280px] h-[260px] mt-[-130px]"> */}
           <div className='absolute top-[10px] left-[15%] w-[200px] h-[180px] bg-gradient-to-b from-[#ffffff] to-[#2DBDC5] opacity-20 blur-lg rounded-full'></div>

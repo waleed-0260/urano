@@ -20,7 +20,7 @@ const Partners = () => {
     >
       <p
         className="font-bold heading font-conthrax md:w-[40%] w-[90%] text-center"
-        data-aos="fade-up"
+      data-aos="fade-up"
         // data-aos-delay=""
       >
         Urano's advisors & partners
@@ -30,7 +30,7 @@ const Partners = () => {
           href="https://www.hrcdigitalasset.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-right"
+          className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
         >
           <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img src={partner12} alt="HRC" className="object-cover"/>
@@ -46,7 +46,7 @@ const Partners = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
-          data-aos="fade-up"
+        
         >
           <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img src={partner11} alt="Thompson & Stein" className="object-cover"/>
@@ -63,7 +63,7 @@ const Partners = () => {
           href="https://notarify.io"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-right"
+          className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
         >
           <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img src={partner2} alt="Notarify" className="object-cover" />
@@ -79,7 +79,7 @@ const Partners = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
-          data-aos="fade-left"
+          
         >
           <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img
@@ -94,7 +94,7 @@ const Partners = () => {
           </div>
         </a>
 
-        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-right">
+        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]">
           <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img src={partner10} alt="LogiX Transport" className="object-cover"/>
           </div>
@@ -111,7 +111,7 @@ const Partners = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
-          data-aos="fade-left"
+          
         >
           <div className="h-[65px] w-[75px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img src={partner9} alt="Magnitudo" className="object-cover" />
@@ -128,7 +128,7 @@ const Partners = () => {
           href="https://www.bonoingegneria.it"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-right"
+          className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
         >
           <div className="h-[70px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img
@@ -150,7 +150,7 @@ const Partners = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
-          data-aos="fade-left"
+          
         >
           <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img
@@ -165,7 +165,7 @@ const Partners = () => {
           </div>
         </a>
 
-        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-left">
+        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" >
           <div className="h-[75px] w-[75px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img src={partner8} alt="FinancePros" className="object-cover" />
           </div>
@@ -175,7 +175,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-up">
+        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]">
           <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img
               src={partner7}
@@ -189,7 +189,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-left">
+        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" >
           <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img
               src={partner6}
@@ -203,7 +203,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" data-aos="fade-up">
+        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]">
           <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img
               src={partner5}

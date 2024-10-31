@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const MainDapp = ({ text, img, heading, addText }) => {
 
   return (
-    <div className='w-[90%] lg:max-w-[1200px] flex md:flex-row flex-col items-center justify-around my-6 gap-5'>
-      <div className='md:w-[50%] flex items-center justify-center' data-aos="fade-left">
+    <div className='w-[90%] lg:max-w-[1200px] flex md:flex-row flex-col items-center justify-around my-6 gap-5' data-aos="fade-up">
+      <div className='md:w-[50%] flex items-center justify-center'>
         <div className=" h-full sm:w-[80%] w-[120%] md:ml-[100px] ml-[0px]">
           <img src={img} alt="" className=' sm:w-[90%] sm:h-[90%] w-full h-[120%]' />
         </div>
       </div>
-      <div className='md:w-[43%] flex items-center justify-center flex-col md:block relative md:mt-0 mt-[-100px]' data-aos="fade-right">
+      <div className='md:w-[43%] flex items-center justify-center flex-col md:block relative md:mt-0 mt-[-100px]'>
         <div className='absolute top-[-100px] left-[80%]  w-[350px] h-[350px] bg-white opacity-20 blur-3xl rounded-full'></div>
         <div className='flex md:flex-row flex-col md:items-start items-center md:gap-4'>
           <div className='w-[20px] h-[170px]'>
