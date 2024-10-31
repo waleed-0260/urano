@@ -100,7 +100,7 @@ const EcoSystem = ({
             pin: true,
             pinSpacing: false,
             scrub: 1,  // Enables smooth scrolling
-            markers: true,
+            // markers: true,
         });
 
         // Set ScrollTrigger for each section to control active state
@@ -113,7 +113,7 @@ const EcoSystem = ({
                 end: "bottom center",
                 pin: true,
                 pinSpacing: false,
-                markers: true,
+                // markers: true,
                 onEnter: () => setActivePlanet(key),
                 onLeaveBack: () => {
                     const prevIndex = index > 0 ? index - 1 : 0;
