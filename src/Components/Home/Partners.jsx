@@ -17,15 +17,15 @@ const Partners = () => {
   return (
     <div
       className="w-[90%] lg:max-w-[1200px] flex flex-col items-center justify-center text-white my-[100px]"
-      data-aos="fade-up"
     >
       <p
         className="font-bold heading font-conthrax md:w-[40%] w-[90%] text-center"
         data-aos="fade-up"
+        // data-aos-delay=""
       >
         Urano's advisors & partners
       </p>
-      <div className="sm:grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 hidden gap-3 mt-6">
+      <div className="sm:grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 hidden gap-3 mt-6" data-aos="fade-up" data-aos-delay="300">
         <a
           href="https://www.hrcdigitalasset.com"
           target="_blank"

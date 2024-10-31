@@ -46,17 +46,17 @@ const Team = () => {
 
             <div
                 className='w-full h-[400px] bg-no-repeat bg-cover bg-center ex items-center justify-center text-white flex flex-col'
-                style={{ backgroundImage: `url(${orbitBg})` }} data-aos="fade-up"
+                style={{ backgroundImage: `url(${orbitBg})` }}
             >
 
-                <p className='text-center font-conthrax text-4xl md:w-[70%]'>Bringing <span className='text-[#2DBDC5]' data-aos="fade-up">Real World Compliance </span>  seamlessly on-chain</p>
-                <p data-aos="fade-up" className='mt-4 md:w-[40%] text-[#ADADAD] text-center'>Urano Ecosystem sp z.o.o, Grudziadz (PI), NIP 8762504246 - has been entered into the Register of Virtual Currency Activities maintained by the Director of the Fiscal Administration Chamber in Katowice on 10 may 2023 under the number RDWW-746.</p>
+                <p className='text-center font-conthrax text-4xl md:w-[70%]' data-aos="fade-up" data-aos-delay="200">Bringing <span className='text-[#2DBDC5]' >Real World Compliance </span>  seamlessly on-chain</p>
+                <p data-aos="fade-up" data-aos-delay="500" className='mt-4 md:w-[40%] text-[#ADADAD] text-center'>Urano Ecosystem sp z.o.o, Grudziadz (PI), NIP 8762504246 - has been entered into the Register of Virtual Currency Activities maintained by the Director of the Fiscal Administration Chamber in Katowice on 10 may 2023 under the number RDWW-746.</p>
             </div>
 
 
 
-            <h1 className='mt-[100px] font-conthrax heading' data-aos="fade-up">The Team</h1>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-8 w-[90%] lg:max-w-[1300px] my-[50px]' data-aos="fade-up">
+            <h1 className='mt-[100px] font-conthrax heading' data-aos="fade-up" >The Team</h1>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-8 w-[90%] lg:max-w-[1300px] my-[50px]' data-aos="fade-up" data-aos-delay="400">
                 {teamData.map((data, index) => {
                     return (
                         <div className={`lg:w-[100%] py-3 pt-[40px] pb-[20px] px-3 rounded-2xl flex flex-col items-center justify-start gap-2 border-[2px] border-[#27292b] bg-[#161616] bg-opacity-50 ${index === 3 ? "lg:ml-[180px]" : index === 4 ? "lg:ml-[180px]" : ""}`} key={index}>

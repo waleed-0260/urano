@@ -71,21 +71,21 @@ const SceneCanvas = ({
         
         tl.fromTo(
             headingRef.current, 
-            { opacity: 0, y: 160 }, // Starting state
-            { opacity: 0.5, y: 80, duration: 0.5, ease: "power4.out" } // Middle state
+            { opacity: 0, y: 120 }, // Starting state
+            { opacity: 0, y: 120, duration: 0.3, ease: "linear" } // Middle state
         )
         .to(headingRef.current, 
-            { opacity: 1, y: 0, duration: 0.5, ease: "power4.out" } // Ending state
+            { opacity: 1, y: 0, duration: 0.3, ease: "linear" } // Ending state
         );
         const dl = gsap.timeline();
         
         dl.fromTo(
             textRef.current, 
-            { opacity: 0, y: 160 }, // Starting state
-            { opacity: 0.5, y: 80, duration: 0.5, ease: "power4.out" } // Middle state
+            { opacity: 0, y: 120 }, // Starting state
+            { opacity: 0, y: 120, duration: 0.3, ease: "linear" } // Middle state
         )
         .to(textRef.current, 
-            { opacity: 1, y: 0, duration: 0.5, ease: "power4.out" } // Ending state
+            { opacity: 1, y: 0, duration: 0.3, ease: "linear" } // Ending state
         );
     }, []);
 
