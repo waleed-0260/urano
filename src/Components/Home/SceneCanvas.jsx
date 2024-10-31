@@ -14,6 +14,9 @@ const SceneCanvas = ({
 }) => {
     const canvasRef = useRef(null);
     const containerRef = useRef(null);
+    const textRef = useRef(null);
+    const headingRef = useRef(null);
+
 
     const getFramePath = (index) => {
         const frameNumber = String(index).padStart(4, '0');
@@ -63,12 +66,32 @@ const SceneCanvas = ({
         return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     }, [totalFrames]);
 
+    useEffect(() => {
+        const tl = gsap.timeline();
+        
+        tl.fromTo(
+            headingRef.current, 
+            { opacity: 0, y: 160 }, // Starting state
+            { opacity: 0.5, y: 80, duration: 0.5, ease: "power2.out" } // Middle state
+        )
+        .to(headingRef.current, 
+            { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" } // Ending state
+        );
+        gsap.fromTo(textRef.current, 
+            { opacity: 0, y: 160 }, // Starting state
+            { opacity: 1, y: 0, duration: 1 } // Ending state
+        );
+    }, []);
+
+    
+    
+
     return (
         <div className='w-full'>
             <div ref={containerRef} className='flex lg:flex-row flex-col items-center justify-around w-[90%] lg:max-w-[1200px] text-white lg:pt-[20px] pt-[120px] mx-auto'>
                 <div className='flex flex-col lg:min-w-[30%]'>
-                    <h1 data-aos="fade-up" className='heading lg:w-[350px] font-conthrax'>Unlocking the power of <span className='text-[#2DBDC5]'>on-chain</span> tokenization</h1>
-                    <p data-aos="fade-up" data-aos-delay={200} className='textColor lg:w-[270px]'>Urano Ecosystem is a decentralized tokenization platform, serving as a safe path for off-chain and Real World Asset (RWA) opportunities.</p>
+                    <h1 ref={headingRef} className='heading lg:w-[350px] font-conthrax'>Unlocking the power of <span className='text-[#2DBDC5]'>on-chain</span> tokenization</h1>
+                    <p ref={textRef} className='textColor lg:w-[270px]'>Urano Ecosystem is a decentralized tokenization platform, serving as a safe path for off-chain and Real World Asset (RWA) opportunities.</p>
                     <Link data-aos="fade-up" data-aos-delay={300} to="#ecosystem" className='px-2 py-2 rounded-lg btnColor flex items-center justify-center w-[110px] mt-[30px] font-[500]'>Discover <MdKeyboardArrowRight /> </Link>
                 </div>
                 <div data-aos="fade-up" data-aos-delay={300} className='relative lg:min-w-[60%] flex-grow'>

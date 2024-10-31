@@ -15,13 +15,13 @@ const Roadmap = () => {
   };
 
   return (
-    <div className='w-[95%] lg:max-w-[1300px] flex flex-col items-center justify-center text-white my-10 relative' data-aos="fade-up">
+    <div className='w-[95%] lg:max-w-[1300px] flex flex-col items-center justify-center text-white my-10 relative' >
         <div className='absolute top-[-250px] left-[-300px]  w-[350px] h-[450px] bg-gradient-to-b from-[#ffffff] to-[#2DBDC5] opacity-20 blur-3xl rounded-full'></div>
-        <p className='heading text-center font-bold font-conthrax'>Roadmap</p>
+        <p className='heading text-center font-bold font-conthrax' data-aos="fade-up">Roadmap</p>
         {/* <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 mt-[40px]'> */}
         {/* <div className='relative'> */}
 
-        <Swiper className='w-full py-4 mt-5' slidesPerView={4} spaceBetween={7}         breakpoints={{
+        <Swiper data-aos="fade-up" className='w-full py-4 mt-5' slidesPerView={4} spaceBetween={7}         breakpoints={{
           // when window width is >= 320px
           100: {
             slidesPerView: 1,
@@ -47,7 +47,7 @@ const Roadmap = () => {
         onSlideChange={handleSlideChange} // Attach slide change event
 
         >
-            <SwiperSlide className='flex flex-row items-center justify-between gap-2 '>
+            <SwiperSlide className='flex flex-row items-center justify-between gap-2 ' >
               <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[2px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]sm:w-auto">
 
                 <p className='textColor'>2023 Q1</p>

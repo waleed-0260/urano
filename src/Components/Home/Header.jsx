@@ -68,7 +68,7 @@ const Header = () => {
           <li className='text-[#ACAEAE]'><Link to={"/about"} >About Us</Link></li>
           <li className='text-[#ACAEAE]'><Link to={"/"} >Learn More</Link></li>
           {/* <li className='text-[#ACAEAE]' ><Link to={"/unft"} >NFTs</Link></li> */}
-          <li className='text-[#ACAEAE]' ><Link to={"#contact"} >Contact Us</Link></li>
+          <li className='text-[#ACAEAE]' ><Link to={"/#contact"} >Contact Us</Link></li>
         </ul>
         <Link to={"/dapp"} className='rounded-md lg:flex hidden px-3 py-1 bg-white text-black font-semibold'>Launch DApp</Link>
         <div className='lg:hidden flex text-white text-lg' ref={sidebarRef} onClick={() => setIsOpen(!isOpen)}> {isOpen ? <IoClose /> : <CiMenuFries />} </div>
