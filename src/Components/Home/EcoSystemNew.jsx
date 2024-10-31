@@ -53,6 +53,7 @@ const EcoSystem = ({
 
     const content = {
         "planet1": {
+            name: "planet1",
             title: "Discover the Ecosystem",
             description: "Take your first steps into the world of Real World Assets (RWA) with uNFTs and the $URANO token. Explore the possibilities of tokenized assets and their impact on traditional finance.",
             progress: 25,
@@ -60,6 +61,7 @@ const EcoSystem = ({
             sectionHeight: "20vh"
         },
         "planet2": {
+            name: "planet2",
             title: "Tokenize Your Assets",
             description: "The Urano Ecosystem empowers you to bring Real World Assets (RWA) on-chain, unlocking innovative pathways to generate value and increase liquidity.",
             progress: 50,
@@ -67,6 +69,7 @@ const EcoSystem = ({
             sectionHeight: "60vh"
         },
         "planet3": {
+            name: "planet3",
             title: "European Tokenization License",
             description: "Invest in tokenized assets securely, ensuring compliance with European regulations while benefiting from new investment opportunities.",
             progress: 75,
@@ -74,11 +77,12 @@ const EcoSystem = ({
             sectionHeight: "60vh"
         },
         "planet4": {
+            name: "planet4",
             title: "Faster, Cheaper, Safer",
             description: "The Urano Ecosystem utilizes blockchain technology to provide a transparent platform with minimal intermediary fees and accelerated settlement times.",
             progress: 100,
             image: "/assets/planets/mercuryFull.png",
-            sectionHeight: "70vh"
+            sectionHeight: "80vh"
         },
     };    
 
@@ -163,26 +167,31 @@ const EcoSystem = ({
                     ))}
                 </div>
                 <div className="lg:pt-10 pt-2 overflow-hidden lg:flex-grow w-full sticky top-0 right-0">
-                    <div className="relative scale-[1.5] h-screen border-red-600 border-2 lg:min-h-[600px] md:min-h-[300px] min-h-[270px] flex justify-center items-center w-full">
-                        <video poster={stars} className="absolute opacity-30 top-0 left-0 w-full h-full object-cover" src="assets/stars.webm" autoPlay loop muted playsInline></video>
-                        <img className='max-w-full max-h-full' src="/assets/planets/uranusFull.png" alt="" />
-                        {Object.values(content).map((item, index) => (
+                    <div className="relative scale-[1.5] h-screen lg:min-h-[600px] md:min-h-[300px] min-h-[270px] flex justify-center items-center w-full">
+                        <video poster={stars} className="absolute opacity-30 top-0 left-0 w-full h-full object-cover" src="/assets/stars.webm" autoPlay loop muted playsInline></video>
+                        <img className='max-w-full z-[2] max-h-full' src="/assets/planets/uranusFull.png" alt="" />
+                        {Object.values(content).map((item, index) => {
+                            const rotationValue = `${config[activePlanet]?.rotation[item?.name] || "0"}deg`;
+                            const transformStyle = `rotate(${rotationValue})`;
+                            return (
                             <div key={index}
                                 className={`planet-${index + 1} absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2`}
 
                             >
                                 <img
                                     style={{
+                                        willChange: "transform",
                                         transformOrigin: "center",
                                         transition: "transform 1s linear",
-                                        transform: `rotate(${config[activePlanet]?.rotation[item?.name]}deg)`
+                                        WebkitTransform: transformStyle,
+                                        transform: transformStyle
                                     }}
                                     className='max-w-full max-h-full'
                                     src={item.image}
                                     alt=""
                                 />
                             </div>
-                        ))}
+                        )})}
                     </div>
                 </div>
             </div>

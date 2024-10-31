@@ -11,7 +11,7 @@ import useScreensize from '../hook/useScreensize'
 import EcoSystem from '../Components/Home/EcoSystem'
 
 const Home = () => {
-  const [activePlanet, setActivePlanet] = useState("planet4");
+  const [activePlanet, setActivePlanet] = useState("planet1");
   const location = useLocation();
   const { width } = useScreensize();
 
