@@ -17,6 +17,8 @@ import partner9 from "../../assets/partner9.png";
 import partner10 from "../../assets/partner10.png";
 import partner11 from "../../assets/partner11.png";
 import partner12 from "../../assets/partner12.png";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 const Partners = () => {
   // const [seeMore, setSeeMore] = useState(false);
@@ -229,7 +231,7 @@ const Partners = () => {
 
       {/* <div className="sm:hidden block"> */}
 
-      <div className="sm:hidden flex w-[100%]">
+      <div className="sm:hidden flex w-[100%] relative">
       <Swiper data-aos="fade-up" data-aos-delay="400"
            modules={[Navigation]}
         navigation={{
@@ -395,8 +397,8 @@ const Partners = () => {
 </SwiperSlide>
 
           </Swiper>
-          <div className="swiper-prev absolute text-white sm:top-[150px] top-[210px] md:left-0 transform -translate-y-1/2 z-0 sm:hidden block" onClick={() => swiperRef.current.swiper.slidePrev()}></div>
-            <div className="swiper-next absolute text-white sm:top-[150px] top-[210px] transform -translate-y-1/2 z-0 sm:hidden block" onClick={() => swiperRef.current.swiper.slideNext()}></div>
+          <div className="swiper-prev absolute text-white sm:top-[150px] top-[100px] left-[-10px] transform -translate-y-1/2 z-0 sm:hidden block" onClick={() => swiperRef.current.swiper.slidePrev()}> <FaChevronLeft/></div>
+            <div className="swiper-next absolute text-white sm:top-[150px] top-[100px] left-[330px] transform -translate-y-1/2 z-0 sm:hidden block" onClick={() => swiperRef.current.swiper.slideNext()}> <FaChevronRight/></div>
           </div>
 
     </div>
