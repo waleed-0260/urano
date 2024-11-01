@@ -398,7 +398,7 @@ const Partners = () => {
 
           </Swiper>
           <div className="swiper-prev absolute text-white sm:top-[150px] top-[100px] left-[-10px] transform -translate-y-1/2 z-0 sm:hidden block" onClick={() => swiperRef.current.swiper.slidePrev()}> <FaChevronLeft/></div>
-            <div className="swiper-next absolute text-white sm:top-[150px] top-[100px] left-[330px] transform -translate-y-1/2 z-0 sm:hidden block" onClick={() => swiperRef.current.swiper.slideNext()}> <FaChevronRight/></div>
+            <div className="swiper-next absolute text-white sm:top-[150px] top-[100px] right-[-15px] transform -translate-y-1/2 z-0 sm:hidden block" onClick={() => swiperRef.current.swiper.slideNext()}> <FaChevronRight/></div>
           </div>
 
     </div>

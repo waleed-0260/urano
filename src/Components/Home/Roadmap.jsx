@@ -193,8 +193,8 @@ const Roadmap = () => {
             {/* <div className="swiper-button-prev bg-red-700 absolute left-[-10px] z-50"></div>
             <div className="swiper-button-next"></div> */}
             </Swiper>
-            <div className="swiper-button-prev absolute text-white sm:top-[150px] top-[210px] md:left-0 left-[-10px] transform -translate-y-1/2 z-0" onClick={() => swiperRef.current.swiper.slidePrev()}></div>
-            <div className="swiper-button-next absolute text-white sm:top-[150px] top-[210px] transform -translate-y-1/2 z-0" onClick={() => swiperRef.current.swiper.slideNext()}></div>
+            <div className="swiper-button-prev absolute text-white sm:top-[180px] top-[230px] md:left-0 left-[-10px] transform -translate-y-1/2 z-0" onClick={() => swiperRef.current.swiper.slidePrev()}></div>
+            <div className="swiper-button-next absolute text-white sm:top-[180px] top-[230px] transform -translate-y-1/2 z-0" onClick={() => swiperRef.current.swiper.slideNext()}></div>
             </div>
 
 
