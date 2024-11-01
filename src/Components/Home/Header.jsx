@@ -70,7 +70,7 @@ const Header = () => {
           {/* <li className='text-[#ACAEAE]' ><Link to={"/unft"} >NFTs</Link></li> */}
           <li className='text-[#ACAEAE]' ><Link to={"/#contact"} >Contact Us</Link></li>
         </ul>
-        <Link to={"/dapp"} className='rounded-md lg:flex hidden px-3 py-2 bg-white text-black font-semibold text-sm w-[130px] flex items-center justify-center'>Launch DApp</Link>
+        <Link to={"/dapp"} className='rounded-md lg:flex hidden px-2 py-2 bg-white text-black font-semibold text-[14px] w-[120px] flex items-center justify-center'>Launch DApp</Link>
         <div className='lg:hidden flex text-white text-lg' ref={sidebarRef} onClick={() => setIsOpen(!isOpen)}> {isOpen ? <IoClose /> : <CiMenuFries />} </div>
       </div>
       <div className={`fixed top-[65px] right-0 bottom-0 w-[300px] bg-black text-white transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} z-50 overflow-y-auto`}>
