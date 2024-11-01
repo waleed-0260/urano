@@ -28,10 +28,6 @@ const Roadmap = () => {
 
         <Swiper data-aos="fade-up" data-aos-delay="400"
            modules={[Navigation]}
-        //  autoplay={{
-        //   delay: 1000, // Adjust delay as needed (in milliseconds)
-        //   disableOnInteraction: false, // Autoplay will not stop on user interaction
-        // }}
         navigation={{
           prevEl: '.swiper-button-prev',
           nextEl: '.swiper-button-next',
@@ -63,10 +59,10 @@ const Roadmap = () => {
         
         >
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none' >
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[2px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw] sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[2px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw] sm:w-[350px]">
 
                 <p className='textColor'>2023 Q1</p>
-                <p className='text-md text-center font-conthrax mt-2'>Establishment of Urano Foundation</p>
+                <p className='text-md text-center font-conthrax mt-2'>Establishment of the Urano Foundation</p>
               </div>
                 <p className="text-sm">
                 <MdKeyboardArrowRight/>
@@ -74,10 +70,10 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2023 Q2</p>
-                <p className='text-md text-center font-conthrax mt-2'>Urano Ecosystem registers in European registration of virtual currency activities (obtaining the tokenization license)</p>
+                <p className='text-md text-center font-conthrax mt-2'>Urano Ecosystem entered the European Register of Virtual Currency Activities (obtaining the Tokenization License) </p>
               </div>
                 <p className="text-sm">
                 <MdKeyboardArrowRight/>
@@ -85,7 +81,7 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2024 - Q1</p>
                 <p className='text-md text-center font-conthrax mt-2'>Expansion of the team and rebranding initiatives</p>
@@ -96,7 +92,7 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2024 - Q3</p>
                 <p className='text-md text-center font-conthrax mt-2'>Launch of the official website</p>
@@ -107,7 +103,7 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none relative'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[2px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[2px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2024 Q4</p>
                 <p className='text-md text-center font-conthrax mt-2'>Initation of speed/pre-sale phase</p>
@@ -118,10 +114,10 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2024 Q4</p>
-                <p className='text-md text-center font-conthrax mt-2'>Formation of institutional partnership</p>
+                <p className='text-md text-center font-conthrax mt-2'>Formation of institutional partnerships</p>
               </div>
                 <p className="text-sm">
                 <MdKeyboardArrowRight/>
@@ -129,7 +125,7 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2025 - Q1</p>
                 <p className='text-md text-center font-conthrax mt-2'>Release of the Urano DApp</p>
@@ -140,7 +136,7 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2025 Q1</p>
                 <p className='text-md text-center font-conthrax mt-2'>Launch of the Urano Token</p>
@@ -152,7 +148,7 @@ const Roadmap = () => {
 
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2025 - Q1</p>
                 <p className='text-md text-center font-conthrax mt-2'>First Real World Asset (RWA) tokenization sale</p>
@@ -163,10 +159,10 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2025 Q2</p>
-                <p className='text-md text-center font-conthrax mt-2'>Launch of the Urano LaunchPad</p>
+                <p className='text-md text-center font-conthrax mt-2'>Launch of the Urano Launchpad</p>
               </div>
                 <p className="text-sm">
                 <MdKeyboardArrowRight/>
@@ -174,10 +170,10 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2025 - Q2/Q3</p>
-                <p className='text-md text-center font-conthrax mt-2'>Acquition of Dubai-USA Virtual Currency Activities License</p>
+                <p className='text-md text-center font-conthrax mt-2'>Acquisition of Dubai-USA Virtual Currency Activities License</p>
               </div>
                 <p className="text-sm">
                 <MdKeyboardArrowRight/>
@@ -185,7 +181,7 @@ const Roadmap = () => {
             </SwiperSlide>
 
             <SwiperSlide className='flex flex-row items-center justify-between gap-2 cursor-grab  w-[400px] select-none'>
-              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[200px] sm:h-[320px] h-[300px] w-[90vw]  sm:w-[350px]">
+              <div className="flex flex-col items-center justify-center rounded-xl bg-[#0f0f0f] hover:bg-gradient-to-b from-[rgba(8,7,7,0.8)] via-[rgba(8,7,7,0.7)] via-30% to-[rgba(0,104,94,0.4)] border-[1px] border-[#27292b] px-2 md:h-[240px] sm:h-[360px] h-[340px] w-[90vw]  sm:w-[350px]">
 
                 <p className='textColor'>2025 - Q3/Q4</p>
                 <p className='text-md text-center font-conthrax mt-2'>Intergation with a European Stock Exchange</p>

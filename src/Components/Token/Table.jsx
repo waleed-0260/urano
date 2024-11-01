@@ -17,7 +17,7 @@ const Table = () => {
     <div className='w-[80%] lg:max-w-[1200px] mt-4 flex flex-col items-center justify-center' data-aos="fade-up">
       <p className='font-conthrax heading text-center'>Tokenomics</p>
       <div className='w-full overflow-x-auto' style={{ overflowX: 'auto !important' }}>
-        <div className="border-[1px] border-[#27292b] rounded-xl overflow-hidden my-5 min-w-[600px]">
+        <div className="border-[1px] border-[#27292b] rounded-xl overflow-hidden my-5 min-w-[1000px]">
           <table className="w-full ">
             <thead>
               <tr className="bg-[#0f0f0f]">
@@ -53,7 +53,7 @@ const Table = () => {
         </div>
       </div>
 
-      <button className='btnColor w-[220px] py-2 rounded-lg flex flex-row items-center justify-center mb-[100px] font-[500]'>Access Full Tokenomics <MdKeyboardArrowRight /></button>
+      <a href="https://docs.google.com/spreadsheets/d/1AQVz246c3HrfVgKDDZpncQVzACu4SMk4/edit?gid=697674435#gid=697674435" target="blank" className='btnColor w-[220px] py-2 rounded-lg flex flex-row items-center justify-center mb-[100px] font-[500]'>Access Full Tokenomics <MdKeyboardArrowRight /></a>
 
     </div>
   )

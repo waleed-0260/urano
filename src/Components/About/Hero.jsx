@@ -10,8 +10,8 @@ const Hero = () => {
         <div className='absolute sm:top-[-350px] top-[-450px]  w-[450px] h-[450px] bg-gradient-to-b from-[#2DBDC5] to-[#16EAC0] opacity-20 blur-3xl rounded-full'></div>
         <p className="text-2xl bg-gradient-to-b from-[#2DBDC5] to-[#16EAC0] text-transparent bg-clip-text md:mt-0 mt-[-80px]" data-aos="fade-up">
         About Us</p>
-            <h1 className='heading md:w-[90%] text-center font-conthrax' data-aos="fade-up" data-aos-delay="400">Urano Ecosystem is a <span className='text-[#2DBDC5]'>decentralized</span> tokenization platform</h1>
-            <p className='text-[#ADADAD] md:w-[60%] text-center mt-3' data-aos="fade-up" data-aos-delay="400">Urano Ecosystem serves as a safe path for off-chain and Real World Asset (RWA) opportunities such as real estate, finance, and art to take shape on-chain. This platform provides a new way for people to interact with their investments in a more scalable, democratic, and transparent manner.</p>
+            <h1 className='heading md:w-[90%] text-center font-conthrax mt-4' data-aos="fade-up" data-aos-delay="400">Urano Ecosystem is a <span className='text-[#2DBDC5]'>decentralized</span> tokenization platform</h1>
+            <p className='text-[#ADADAD] md:w-[60%] text-center mt-5' data-aos="fade-up" data-aos-delay="400">Urano Ecosystem serves as a safe path for off-chain and Real World Asset (RWA) opportunities such as real estate, finance, and art to take shape on-chain. This platform provides a new way for people to interact with their investments in a more scalable, democratic, and transparent manner.</p>
         </div>
         <div className='relative' data-aos="fade-up" data-aos-delay="400">
   {/* Blurry Background */}
@@ -19,7 +19,7 @@ const Hero = () => {
 
   {/* Planet Image */}
   <div className=' h-full w-full'>
-  <img src={aboutBg} alt="" className='relative w-full h-auto max-w-[100%] max-h-[600px]' />
+  <img src={aboutBg} alt="" className='relative w-full h-auto max-w-[100%] max-h-[400px]' />
   </div>
 </div>
 </div>

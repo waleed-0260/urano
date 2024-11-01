@@ -13,18 +13,18 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 uppercase md:mt-0 mt-2">Company</h3>
             <ul className="space-y-2">
               <li><Link to="/about" className="text-[#ADADAD]">About Us</Link></li>
-              <li><a href="#" className="text-[#ADADAD]">How It Works</a></li>
-              <li><a href="#" className="text-[#ADADAD]">Press</a></li>
+              <li><Link to="/coming" className="text-[#ADADAD]">How It Works</Link></li>
+              <li><Link to="/coming" href="#" className="text-[#ADADAD]">Press</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4 mt-4 md:mt-0 uppercase md:mt-0 mt-2">Resources</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-[#ADADAD]">Litepaper</a></li>
-              <li><a href="#" className="text-[#ADADAD]">Documentation</a></li>
-              <li><a href="#" className="text-[#ADADAD]">FAQ</a></li>
-              <li><a href="#" className="text-[#ADADAD]">Brand Kit</a></li>
-              <li><a href="#" className="text-[#ADADAD]">Audit Reports</a></li>
+              <li><Link to="/coming" href="#" className="text-[#ADADAD]">Litepaper</Link></li>
+              <li><Link to="/coming" href="#" className="text-[#ADADAD]">Documentation</Link></li>
+              <li><Link to="/coming" href="#" className="text-[#ADADAD]">FAQ</Link></li>
+              <li><Link to="/coming" href="#" className="text-[#ADADAD]">Brand Kit</Link></li>
+              <li><Link to="/coming" href="#" className="text-[#ADADAD]">Audit Reports</Link></li>
             </ul>
           </div>
           <div>

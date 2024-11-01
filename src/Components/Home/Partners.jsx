@@ -1,4 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { MdKeyboardArrowRight } from "react-icons/md";
+// import { useState } from 'react';
+import { Autoplay, Navigation } from 'swiper/modules';
 import partner1 from "../../assets/partner1.png";
 import partner2 from "../../assets/partner2.png";
 import partner3 from "../../assets/partner3.png";
@@ -13,7 +19,7 @@ import partner11 from "../../assets/partner11.png";
 import partner12 from "../../assets/partner12.png";
 
 const Partners = () => {
-  const [seeMore, setSeeMore] = useState(false);
+  // const [seeMore, setSeeMore] = useState(false);
   return (
     <div
       className="w-[90%] lg:max-w-[1200px] flex flex-col items-center justify-center text-white my-[100px]"
@@ -25,14 +31,15 @@ const Partners = () => {
       >
         Urano's advisors & partners
       </p>
-      <div className="sm:grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 hidden gap-3 mt-6" data-aos="fade-up" data-aos-delay="300">
+      <div className="sm:grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 hidden gap-3 mt-6" data-aos="fade-up" 
+      data-aos-delay="300">
         <a
           href="https://www.hrcdigitalasset.com"
           target="_blank"
           rel="noopener noreferrer"
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
         >
-          <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+          <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img src={partner12} alt="HRC" className="object-cover"/>
           </div>
           <div className="flex flex-col">
@@ -48,7 +55,7 @@ const Partners = () => {
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
         
         >
-          <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+          <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img src={partner11} alt="Thompson & Stein" className="object-cover"/>
           </div>
           <div className="flex flex-col">
@@ -130,11 +137,11 @@ const Partners = () => {
           rel="noopener noreferrer"
           className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]"
         >
-          <div className="h-[70px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+          <div className="h-[65px] w-[75px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img
               src={partner3}
               alt="Bono Ingegneria S.r.l."
-              className="w-[53px] h-[56px]"
+              className="object-cover"
             />
           </div>
           <div className="flex flex-col">
@@ -166,8 +173,8 @@ const Partners = () => {
         </a>
 
         <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" >
-          <div className="h-[75px] w-[75px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-            <img src={partner8} alt="FinancePros" className="object-cover" />
+          <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+            <img src={partner8} alt="FinancePros" className="object-cover w-[97px] h-[65px]" />
           </div>
           <div className="flex flex-col">
             <p className="font-bold text-base font-conthrax">Iwona Matwiejew</p>
@@ -180,7 +187,7 @@ const Partners = () => {
             <img
               src={partner7}
               alt="EduGlobal"
-              className="w-[77px] h-[98px] object-cover"
+              className=" h-[70px] object-cover"
             />
           </div>
           <div className="flex flex-col">
@@ -190,15 +197,15 @@ const Partners = () => {
         </div>
 
         <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 lg:w-[100%] md:w-[28vw]" >
-          <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+          <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
             <img
               src={partner6}
               alt="HealthPlus"
-              className="w-[69px] h-[100px] object-cover"
+              className="object-cover h-[80px]"
             />
           </div>
           <div className="flex flex-col">
-            <p className="font-bold text-base font-conthrax">Luigi Fazaari</p>
+            <p className="font-bold text-base font-conthrax">Luigi Fazari</p>
             <p className="text-sm textColor">Real Estate advisor</p>
           </div>
         </div>
@@ -220,204 +227,178 @@ const Partners = () => {
         </div>
       </div>
 
-      <div className="flex sm:hidden flex-col items-center justify-center w-full mt-4 gap-4">
-        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center w-full px-2 py-3 gap-3">
-          <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-            <img
-              src={partner1}
-              alt="Thompson & STEIN"
-              className="w-[49.61px] h-[33.32px]"
-            />
-          </div>
-          <div className="flex flex-col">
-            <p className="font-bold text-base font-conthrax">Nova Lab</p>
-            <p className="text-sm textColor">Social Media Manager</p>
-          </div>
-        </div>
+      {/* <div className="sm:hidden block"> */}
 
-        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-          <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-            <img
-              src={partner2}
-              alt="Global Ventures"
-              className="w-[52px] h-[52px]"
-            />
-          </div>
-          <div className="flex flex-col">
-            <p className="font-bold text-base font-conthrax">Notarify</p>
-            <p className="text-sm textColor">Notarization on Blockchain</p>
-          </div>
-        </div>
-
-        <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-          <div className="h-[70px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-            <img
-              src={partner3}
-              alt="Tech Innovators"
-              className="w-[53px] h-[56px]"
-            />
-          </div>
-          <div className="flex flex-col">
-            <p className="font-bold text-base font-conthrax">
-              Bono Ingegneria S.r.l.
-            </p>
-            <p className="text-sm textColor">Real Estate Advisors</p>
-          </div>
-        </div>
-
-        {seeMore ? (
-          <>
-            <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-              <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-                <img
-                  src={partner4}
-                  alt="Future Solutions"
-                  className="h-full object-cover"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-bold text-base font-conthrax">Stay Record</p>
-                <p className="text-sm textColor">Entertainment advisors</p>
-              </div>
-            </div>
-
-            <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-              <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-                <img
-                  src={partner5}
-                  alt="EcoGreen Corp"
-                  className="w-[137px] h-[80px]"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-bold text-base font-conthrax">
-                  EcoGreen Corp
-                </p>
-                <p className="text-sm textColor">Sustainable energy company</p>
-              </div>
-            </div>
-
-            <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-              <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-                <img
-                  src={partner6}
-                  alt="HealthPlus"
-                  className="w-[69px] h-[100px]"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-bold text-base font-conthrax">
-                  Luigi Fazaari
-                </p>
-                <p className="text-sm textColor">Real Estate Manager</p>
-              </div>
-            </div>
-
-            <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-              <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-                <img
-                  src={partner7}
-                  alt="EduGlobal"
-                  className="w-[77px] h-[98px]"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-bold text-base font-conthrax">
-                  Gjon Radovani
-                </p>
-                <p className="text-sm textColor">Art-real estate advisors</p>
-              </div>
-            </div>
-
-            <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-              <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-                <img
-                  src={partner8}
-                  alt="FinancePros"
-                  className="w-[77px] h-[98px]"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-bold text-base font-conthrax">
-                  Iwana matweje
-                </p>
-                <p className="text-sm textColor">Commidities advisor</p>
-              </div>
-            </div>
-
-            <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-              <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-                <img
-                  src={partner9}
-                  alt="Creative Minds"
-                  className="w-[52px] h-[41px]"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-bold text-base font-conthrax">Magnitudo</p>
-                <p className="text-sm textColor">
-                  Film production & distributor advisor
-                </p>
-              </div>
-            </div>
-
-            <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-              <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-                <img
-                  src={partner10}
-                  alt="LogiX Transport"
-                  className="w-[54px] h-[62px]"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-bold text-base font-conthrax">
-                  Aurora Bullion S.r.l
-                </p>
-                <p className="text-sm textColor">Gold investment advisors</p>
-              </div>
-            </div>
-
-            <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-              <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-                <img
-                  src={partner11}
-                  alt="Smart Homes Inc."
-                  className="w-[55px] h-[33px]"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-bold text-base font-conthrax">
-                  Thompson & Stein
-                </p>
-                <p className="text-sm textColor">International Law Firm</p>
-              </div>
-            </div>
-
-            <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-full">
-              <div className="h-[75px] w-[80px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
-                <img
-                  src={partner12}
-                  alt="Smart Homes Inc."
-                  className="w-[54px] h-[18px]"
-                />
-              </div>
-              <div className="flex flex-col">
-                <p className="font-bold text-base font-conthrax">HRC</p>
-                <p className="text-sm textColor">DeFi advisors</p>
-              </div>
-            </div>
-          </>
-        ) : (
-          <div className="text-center bg-[#0f0f0f] w-full p-4 py-[40px] rounded-lg mt-[-110px] bg-opacity-90 shadow-2xl">
-            <p
-              className="textColor text-[#2DBDC5] font-bold"
-              onClick={() => setSeeMore(!seeMore)}
-            >
-              Expand
-            </p>
-          </div>
-        )}
+      <div className="sm:hidden flex w-[100%]">
+      <Swiper data-aos="fade-up" data-aos-delay="400"
+           modules={[Navigation]}
+        navigation={{
+          prevEl: '.swiper-prev',
+          nextEl: '.swiper-next',
+        }}
+        className='w-[90%] py-4 mt-5 z-0 relative sm:hidden flex' slidesPerView={1} spaceBetween={7} 
+        >
+            <SwiperSlide>
+    <a href="https://www.hrcdigitalasset.com" target="_blank" rel="noopener noreferrer" className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+      <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+        <img src={partner12} alt="HRC" className="object-cover"/>
       </div>
+      <div className="flex flex-col">
+        <p className="font-bold text-base font-conthrax">HRC</p>
+        <p className="text-sm textColor">DeFi advisors</p>
+      </div>
+    </a>
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <a href="https://www.thompsonstein.com/en/" target="_blank" rel="noopener noreferrer" className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+      <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+        <img src={partner11} alt="Thompson & Stein" className="object-cover"/>
+      </div>
+      <div className="flex flex-col">
+        <p className="font-bold text-base font-conthrax">Thompson & Stein</p>
+        <p className="text-sm textColor">International law firm</p>
+      </div>
+    </a>
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <a href="https://notarify.io" target="_blank" rel="noopener noreferrer" className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+      <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+        <img src={partner2} alt="Notarify" className="object-cover" />
+      </div>
+      <div className="flex flex-col">
+        <p className="font-bold text-base font-conthrax">Notarify</p>
+        <p className="text-sm textColor">Notarization on blockchain</p>
+      </div>
+    </a>
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <a href="https://novalabstudio.it" target="_blank" rel="noopener noreferrer" className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+      <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+        <img src={partner1} alt="Nova Lab" className="object-cover" />
+      </div>
+      <div className="flex flex-col">
+        <p className="font-bold text-base font-conthrax">Nova Lab</p>
+        <p className="text-sm textColor">Social Media Manager</p>
+      </div>
+    </a>
+  </SwiperSlide>
+
+  <SwiperSlide>
+  <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+    <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+      <img src={partner10} alt="LogiX Transport" className="object-cover" />
+    </div>
+    <div className="flex flex-col">
+      <p className="font-bold text-base font-conthrax">Aurora Bullion S.r.l</p>
+      <p className="text-sm textColor">Gold investments advisor</p>
+    </div>
+  </div>
+</SwiperSlide>
+
+<SwiperSlide>
+  <a
+    href="https://magnitudofilm.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+    <div className="h-[65px] w-[85px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+      <img src={partner9} alt="Magnitudo" className="object-cover" />
+    </div>
+    <div className="flex flex-col">
+      <p className="font-bold text-base font-conthrax">Magnitudo</p>
+      <p className="text-sm textColor">Film production & distribution advisors</p>
+    </div>
+  </a>
+</SwiperSlide>
+
+<SwiperSlide>
+  <a
+    href="https://www.bonoingegneria.it"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+    <div className="h-[65px] w-[75px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+      <img src={partner3} alt="Bono Ingegneria S.r.l." className="object-cover" />
+    </div>
+    <div className="flex flex-col">
+      <p className="font-bold text-base font-conthrax">Bono Ingegneria S.r.l.</p>
+      <p className="text-sm textColor">Real Estate advisors</p>
+    </div>
+  </a>
+</SwiperSlide>
+
+<SwiperSlide>
+  <a
+    href="http://www.stayrecord.it"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+    <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+      <img src={partner4} alt="Stay Record" className="h-full w-full object-cover" />
+    </div>
+    <div className="flex flex-col">
+      <p className="font-bold text-base font-conthrax">Stay Record</p>
+      <p className="text-sm textColor">Entertainment advisors </p>
+      </div>
+  </a>
+</SwiperSlide>
+
+<SwiperSlide>
+  <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+    <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+      <img src={partner8} alt="FinancePros" className="object-cover w-[97px] h-[65px]" />
+    </div>
+    <div className="flex flex-col">
+      <p className="font-bold text-base font-conthrax">Iwona Matwiejew</p>
+      <p className="text-sm textColor">Commodities advisor</p>
+    </div>
+  </div>
+</SwiperSlide>
+
+<SwiperSlide>
+  <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+    <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+      <img src={partner7} alt="EduGlobal" className="h-[70px] object-cover" />
+    </div>
+    <div className="flex flex-col">
+      <p className="font-bold text-base font-conthrax">Gjon Radovani</p>
+      <p className="text-sm textColor">Real Estate advisors</p>
+    </div>
+  </div>
+</SwiperSlide>
+
+<SwiperSlide>
+  <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+    <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+      <img src={partner6} alt="HealthPlus" className="object-cover h-[80px]" />
+    </div>
+    <div className="flex flex-col">
+      <p className="font-bold text-base font-conthrax">Luigi Fazari</p>
+      <p className="text-sm textColor">Real Estate advisor</p>
+    </div>
+  </div>
+</SwiperSlide>
+
+<SwiperSlide>
+  <div className="border-[1px] border-[#27292b] rounded-[15px] bg-[#0f0f0f] flex flex-row items-center px-2 py-3 gap-3 w-[100%] h-[120px]">
+    <div className="h-[65px] w-[65px] overflow-hidden rounded-full bg-white p-3 flex items-center justify-center">
+      <img src={partner5} alt="EcoGreen Corp" className="w-[137px] h-[60px] mt-2 object-cover" />
+    </div>
+    <div className="flex flex-col">
+      <p className="font-bold text-base font-conthrax">Stefano Visconti</p>
+      <p className="text-sm textColor">Healthcare advisor</p>
+    </div>
+  </div>
+</SwiperSlide>
+
+          </Swiper>
+          <div className="swiper-prev absolute text-white sm:top-[150px] top-[210px] md:left-0 transform -translate-y-1/2 z-0 sm:hidden block" onClick={() => swiperRef.current.swiper.slidePrev()}></div>
+            <div className="swiper-next absolute text-white sm:top-[150px] top-[210px] transform -translate-y-1/2 z-0 sm:hidden block" onClick={() => swiperRef.current.swiper.slideNext()}></div>
+          </div>
+
     </div>
   );
 };

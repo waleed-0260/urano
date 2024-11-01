@@ -64,13 +64,13 @@ const Header = () => {
         <Link to={"/"} onClick={() => setIsOpen(false)}>
           <img src={logo} alt="" className='h-[70px] w-[150px]' />
         </Link>
-        <ul className='lg:flex hidden flex-row gap-4 text-white'>
+        <ul className='lg:flex hidden flex-row gap-7 text-white'>
           <li className='text-[#ACAEAE]'><Link to={"/about"} >About Us</Link></li>
           <li className='text-[#ACAEAE]'><Link to={"/"} >Learn More</Link></li>
           {/* <li className='text-[#ACAEAE]' ><Link to={"/unft"} >NFTs</Link></li> */}
           <li className='text-[#ACAEAE]' ><Link to={"/#contact"} >Contact Us</Link></li>
         </ul>
-        <Link to={"/dapp"} className='rounded-md lg:flex hidden px-3 py-1 bg-white text-black font-semibold'>Launch DApp</Link>
+        <Link to={"/dapp"} className='rounded-md lg:flex hidden px-3 py-2 bg-white text-black font-semibold text-sm w-[130px] flex items-center justify-center'>Launch DApp</Link>
         <div className='lg:hidden flex text-white text-lg' ref={sidebarRef} onClick={() => setIsOpen(!isOpen)}> {isOpen ? <IoClose /> : <CiMenuFries />} </div>
       </div>
       <div className={`fixed top-[65px] right-0 bottom-0 w-[300px] bg-black text-white transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} z-50 overflow-y-auto`}>
@@ -82,7 +82,7 @@ const Header = () => {
             {/* <Link to="/dapp" className="text-lg hover:text-[#ACAEAE] font-conthrax" onClick={()=>setIsOpen(false)}>Dapp</Link> */}
           </nav>
           <div className="space-y-2 h-[50%] flex items-center justify-end flex-col bg-cover bg-center " style={{ backgroundImage: `url(${mobileMenu})` }}>
-            <button className="w-[80%] bg-white text-black font-semibold py-2 px-4 m-[20px] rounded hover:bg-gray-200" onClick={handleLaunchDApp}>
+            <button className="w-[80%] bg-white text-black text-sm py-2 px-4 m-[20px] rounded hover:bg-gray-200" onClick={handleLaunchDApp}>
               Launch DApp
             </button>
             <div className="flex justify-center space-x-4 p-3">

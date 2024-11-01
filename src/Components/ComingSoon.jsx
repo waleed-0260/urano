@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
+
 const ComingSoon = ({
     totalFrames = 360,
     width = 1400,
@@ -67,7 +68,7 @@ const ComingSoon = ({
         <h1 className='text-2xl mb-7 bg-gradient-to-b from-[#2DBDC5] to-[#16EAC0] text-transparent bg-clip-text font-conthrax' data-aos="fade-up">Coming Soon</h1>
 
         <div className='absolute pointer-events-none top-[50px] left-1/2 -translate-x-1/2 w-[67%] -translate-y-1/2 h-[70%] bg-gradient-to-b from-[#74eef466] to-[#2DBDC5] opacity-15 blur-3xl rounded-full'></div>
-                    <div className='z-20 sm:mt-[-250px] mt-[-100px]'
+                    <div className='z-20 sm:mt-[-150px] mt-[-100px] w-[60%]'
                     // style={{ height: "100vh" }}
                     >
                         <canvas ref={canvasRef} width={width} height={height} style={{ width: "100%", height: "100%" }} />
